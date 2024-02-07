@@ -1,0 +1,9 @@
+.idea
+.vscode
+datasets/fsc22
+
+models/*
+!models/README.md
+
+env
+metrics
