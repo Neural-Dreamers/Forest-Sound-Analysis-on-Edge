@@ -14,18 +14,21 @@
 
 5.  Install the following libraries in the Conda environment.
 
-        conda install conda-forge::tensorflow
-        conda install pytorch::pytorch
-        conda install anaconda::numpy
-        conda install anaconda::pandas
-        conda install conda-forge::tqdm
-        conda install conda-forge::librosa
-    
-        pip install soundfile==0.8.1
-        pip install audiomentations
-         
-        conda install conda-forge::matplotlib
-        conda install conda-forge::optuna
+          pip install "tensorflow<2.11"
+          conda install pytorch::pytorch
+          conda install anaconda::numpy
+          conda install anaconda::pandas
+          conda install conda-forge::tqdm
+          conda install conda-forge::librosa
+          pip install soundfile==0.8.1
+          pip install audiomentations
+          
+          conda install conda-forge::matplotlib
+          conda install conda-forge::optuna
+          
+          pip install tensorflow-model-optimization
+          pip install nncf
+          pip install openvino
 
 7.  Run the **AudioHandler** notebook.
 
