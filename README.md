@@ -32,15 +32,15 @@
           pip install nncf
           pip install openvino
 
-7.  Run the **AudioHandler** notebook.
+7.  Run the **AudioHandler** notebook. (scripts/audio_processing/Audio Handler.ipynb)
 
     Once completed, the pickle file of FSC22 resampled at 20kHz will be inside the dataset -\> fsc22 -\> Pickle Files directory.
 
-9.  Run the **Feature Generator** notebook providing necessary command line inputs as required.
+9.  Run the **Feature Generator** notebook providing necessary command line inputs as required. (scripts/audio_processing/Feature Generator.ipynb)
    
     Once completed pickle files following given data augmentation and feature extraction techniques will be created inside the dataset -\> fsc22 -\> Pickle Files directory.
 
-8.  Run notebooks of the selected models. (Ex: **AlexNet, DenseNet121, EfficientNetV2B0, InceptionV3, MobileNetV3-Small, ResNet50V2**)
+8.  Run notebooks of the selected models which can be found at scripts/base_models. (Ex: **AlexNet, DenseNet121, EfficientNetV2B0, InceptionV3, MobileNetV3-Small, ResNet50V2**)
   
     In every model notebook, first hyper parameters will be tuned, followed by model training and the model will be saved in the given directory.
 
@@ -56,11 +56,11 @@ Pruning can be done following three approaches.
 
 1.  Weight Pruning
 
-      Run the **Weight Pruning** notebook providing necessary command line inputs as required.
+      Run the **Weight Pruning** notebook providing necessary command line inputs as required. (scripts/model_compression/Weight Pruning.ipynb)
 
 2.  Filter Pruning
 
-      Run the **Filter Pruning** notebook providing necessary command line inputs as required.
+      Run the **Filter Pruning** notebook providing necessary command line inputs as required. (scripts/model_compression/Filter Pruning.ipynb)
 
 3.  Hybrid Pruning
 
@@ -74,11 +74,11 @@ Quantization can be done following two approaches.
 
       Quantization of models of type .h5 can be quantized with this. Models which are initially trained or weight pruned can be quantized.
       
-      Run the **TF_Quantization** notebook providing necessary command line inputs as required.
+      Run the **TF_Quantization** notebook providing necessary command line inputs as required. (scripts/model_compression/TF_Quantization.ipynb)
 
 2.  OpenVINO model quantization
 
       Quantization of models of type IR (OpenVINO Intermediate Representation) can be quantized with this. Models which are filter pruned or hybrid pruned can be quantized.
       
-      Run the **OpenVINO Quantization** notebook providing necessary command line inputs as required.
+      Run the **OpenVINO Quantization** notebook providing necessary command line inputs as required. (scripts/model_compression/OpenVINO_Quantization.ipynb)
 
