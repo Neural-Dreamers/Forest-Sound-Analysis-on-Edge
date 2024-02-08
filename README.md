@@ -1,5 +1,7 @@
 # Forest-Sound-Analysis-on-Edge
 
+> All python notebooks used in this study can be found in the scripts directory.
+
 ## Model Training
 
 1.  Download the FSC22 data from https://www.kaggle.com/datasets/dakshinaranmal/fsc22-v1
